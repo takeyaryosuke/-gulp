@@ -1,0 +1,67 @@
+
+//～５～
+
+.main {
+ // ⾜し算
+ width: 500px + 200;
+ // 引き算
+ width: 800px - 100;
+ // 掛け算
+ width: 5px * 4;
+ // 割り算
+ width: (40px / 4);
+ // 割り算のあまり
+ width: 20px % 3;
+}
+
+
+@for $value from 1 through 3 {
+ .through-sample-#{$value * 10} {
+ margin: 10px * $value;
+ }
+}
+@for $value from 1 to 3 {
+ .to-sample-#{$value * 10} {
+ margin: 10px * $value;
+ }
+}
+
+
+$value: 20;
+@while $value > 0 {
+ .while-sample-#{$value} {
+ margin: $value + px;
+ }
+ $value: $value - 10;
+}
+
+
+
+
+
+$bgColor:#acc1ed,#dc7668,#71d0f2;
+@each $value in $bgColor {
+ .bg-color {
+ background: $value;
+ }
+}
+
+
+
+
+
+
+
+//～８～
+
+// ifの処理を@mixinの中で⾏い、対象のクラスの中で展開し、ifの条件で通ったCSSのプロパティーを反映させてください
+
+
+
+
+
+
+
+
+
+
