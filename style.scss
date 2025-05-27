@@ -56,8 +56,19 @@ $bgColor:#acc1ed,#dc7668,#71d0f2;
 
 // ifの処理を@mixinの中で⾏い、対象のクラスの中で展開し、ifの条件で通ったCSSのプロパティーを反映させてください
 
+$isStyle: true;
 
+@mixin setStyle(){
+	@if $isStyle{
+		color: #f00;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
 
+.box{
+	@include setStyle();
+}
 
 
 

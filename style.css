@@ -45,4 +45,10 @@
 .bg-color {
   background: #71d0f2;
 }
+
+.box {
+  color: #f00;
+  font-size: 12px;
+  line-height: 18px;
+}
 /*# sourceMappingURL=style.css.map */
